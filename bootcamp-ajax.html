@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>API Bootcamp AJAX</title>
+  </head>
+
+  <body>
+    <script>
+      $(document).ready(function(){
+            var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json" +
+            "Id0GPKvbPxFpoJZnxxB0kcbA3kkH2m2f";
+
+            $.ajax ({
+                url: queryURL,
+                method: "GET"
+              })
+
+            var callback =
+            "https://api.nytimes.com/svc/search/v2/articlesearch.jsonId0GPKvbPxFpoJZnxxB0kcbA3kkH2m2f";
+console.log(callback)
+            $(selector).load(queryURL,data,callback);
+
+            function(response) {
+                  var results = response.data;
+                  for (var i = 0; i < results.length; i++) {
+
+              }
+              )}
+    </script>
+  </body>
+</html>
